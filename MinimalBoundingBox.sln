@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalBoundingBox", "MinimalBoundingBox\MinimalBoundingBox.csproj", "{6F2934D1-3CA8-41B0-B75F-62F8179FA90C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalBoundingBox.Tests", "MinimalBoundingBox.Tests\MinimalBoundingBox.Tests.csproj", "{E4FDE18B-08CA-4EA0-9CCA-8D7FA69D8FF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F2934D1-3CA8-41B0-B75F-62F8179FA90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2934D1-3CA8-41B0-B75F-62F8179FA90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2934D1-3CA8-41B0-B75F-62F8179FA90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2934D1-3CA8-41B0-B75F-62F8179FA90C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FDE18B-08CA-4EA0-9CCA-8D7FA69D8FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FDE18B-08CA-4EA0-9CCA-8D7FA69D8FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FDE18B-08CA-4EA0-9CCA-8D7FA69D8FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FDE18B-08CA-4EA0-9CCA-8D7FA69D8FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1228A567-1AF8-4A1B-A0D3-74AF18C24975}
+	EndGlobalSection
+EndGlobal
