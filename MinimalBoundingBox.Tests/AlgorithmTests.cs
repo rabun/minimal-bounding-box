@@ -11,15 +11,15 @@ namespace MinimalBoundingBox.Tests
         public void BoundingBoxTest()
         {
             string[] lines = File.ReadAllLines("Data/points1.txt");
-            List<Point> points = new List<Point>();
+            List<SimplePoint> points = new List<SimplePoint>();
             foreach (string line in lines)
             {
                 string[] lp = line.Split('=', ';');
-                points.Add(new Point { X = double.Parse(lp[1]), Y = double.Parse(lp[3]) });
+                points.Add(new SimplePoint { X = double.Parse(lp[1]), Y = double.Parse(lp[3]) });
 
             }
 
-            Box box = points.BoundingBox();
+            SimpleBox box = points.BoundingBox();
 
             Assert.IsNotNull(box);
         }

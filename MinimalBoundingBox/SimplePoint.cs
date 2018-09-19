@@ -3,7 +3,7 @@
     /// <summary>
     /// Точка
     /// </summary>
-    public class Point
+    public class SimplePoint
     {
         /// <summary>
         /// Широта

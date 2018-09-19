@@ -1,9 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace MinimalBoundingBox
 {
+    /// <summary>
+    /// Алгоритм
+    /// </summary>
     public static class Algorithm
     {
         /// <summary>
@@ -11,19 +13,19 @@ namespace MinimalBoundingBox
         /// </summary>
         /// <param name="points">Массив точек</param>
         /// <returns></returns>
-        public static Box BoundingBox(this List<Point> points)
+        public static SimpleBox BoundingBox(this List<SimplePoint> points)
         {
             double xmin = points.Min(p => p.X);
             double xmax = points.Max(p => p.X);
             double ymin = points.Min(p => p.Y);
             double ymax = points.Max(p => p.Y);
 
-            return new Box
+            return new SimpleBox
             {
-                BottomRight = new Point { X = xmin, Y = ymax },
-                TopRight = new Point { X = xmax, Y = ymax },
-                BottomLeft = new Point { X = xmin, Y = ymin },
-                TopLeft = new Point { X = xmax, Y = ymin }
+                BottomRight = new SimplePoint { X = xmin, Y = ymax },
+                TopRight = new SimplePoint { X = xmax, Y = ymax },
+                BottomLeft = new SimplePoint { X = xmin, Y = ymin },
+                TopLeft = new SimplePoint { X = xmax, Y = ymin }
             };
         }
     }
